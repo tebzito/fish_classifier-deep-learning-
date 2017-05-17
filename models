@@ -1,0 +1,213 @@
+########### patience=20 {patience rises/drops relative to epochs}: nb_epochs=[1,10,100]
+
+1. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.25, 'batch_size': 64, 'choice': {'layers': 'two'}, 'conv2': 64, 'conv1': 128, 'wr': 0.01, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 10, 'optimizers': 'adadelta'})
+nan
+
+2. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'conv3': 64, 'drop_l3': 0.25}, 'conv2': 128, 'conv1': 128, 'wr': 1e-05, 'drop_l1': 0.25, 'activations': 'relu', 'nb_epochs': 100, 'optimizers': 'adadelta'})
+nan
+
+3. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.25, 'batch_size': 64, 'choice': {'layers': 'two'}, 'conv2': 128, 'conv1': 128, 'wr': 0.001, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'sgd'})
+(0.23314241, tiny overfitting)
+
+4. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'conv3': 64, 'drop_l3': 0.5}, 'conv2': 64, 'conv1': 64, 'wr': 0.0001, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'adadelta'})
+(0.18299226, underfitting)
+
+5. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.25, 'batch_size': 64, 'choice': {'conv3': 64, 'drop_l3': 0.25}, 'conv2': 64, 'conv1': 64, 'wr': 0.0001, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'sgd'})
+(0.77470183, underfitting, earlystopping: 30)
+
+6. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'conv3': 64, 'drop_l3': 0.25}, 'conv2': 128, 'conv1': 128, 'wr': 1e-05, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 100, 'optimizers': 'adam'})
+(4.007935, underfitting, earlystopping: 41)
+
+7. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.5, 'batch_size': 64, 'choice': {'conv3': 128, 'drop_l3': 0.25}, 'conv2': 64, 'conv1': 128, 'wr': 0.01, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'adam'})
+(1.2410889, earlystopping: 34)
+
+8. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.25, 'batch_size': 32, 'choice': {'conv3': 128, 'drop_l3': 0.25}, 'conv2': 128, 'conv1': 64, 'wr': 1e-05, 'drop_l1': 0.25, 'activations': 'relu', 'nb_epochs': 10, 'optimizers': 'adadelta'})
+(0.16122681, underfitting)
+
+9. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.25, 'batch_size': 64, 'choice': {'layers': 'two'}, 'conv2': 128, 'conv1': 128, 'wr': 0.01, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 1, 'optimizers': 'adam'})
+
+
+10. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'layers': 'two'}, 'conv2': 128, 'conv1': 64, 'wr': 1e-05, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 10, 'optimizers': 'sgd'})
+(0.62836015, 5star)
+
+11. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.25, 'batch_size': 64, 'choice': {'layers': 'two'}, 'conv2': 64, 'conv1': 128, 'wr': 0.01, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'adam'})
+(0.1907472, underfitting {same params as #10 but more epochs)
+
+12. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.5, 'batch_size': 64, 'choice': {'layers': 'two'}, 'conv2': 64, 'conv1': 128, 'wr': 1e-05, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 50, 'optimizers': 'sgd'})
+(0.37183928, earlystopping=23)
+
+########### patience=40, nb_epochs=[1,10,100]
+
+1. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'conv3': 128, 'drop_l3': 0.5}, 'conv2': 128, 'conv1': 128, 'wr': 0.001, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 150, 'optimizers': 'adam'})
+(4.0233388, underfitting, earlystopping=42)
+
+2. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'conv3': 64, 'drop_l3': 0.5}, 'conv2': 128, 'conv1': 128, 'wr': 0.01, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'adadelta'})
+(0.86312848, underfitting, earlystopping=90)
+
+3. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.25, 'batch_size': 64, 'choice': {'conv3': 64, 'drop_l3': 0.5}, 'conv2': 64, 'conv1': 64, 'wr': 0.01, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 50, 'optimizers': 'adadelta'})
+(4.2153039, underfitting, earlystopping=47)
+
+4. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'conv3': 64, 'drop_l3': 0.5}, 'conv2': 128, 'conv1': 64, 'wr': 0.001, 'drop_l1': 0.25, 'activations': 'relu', 'nb_epochs': 50, 'optimizers': 'adam'})
+nan
+
+5. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.25, 'batch_size': 32, 'choice': {'conv3': 64, 'drop_l3': 0.5}, 'conv2': 64, 'conv1': 64, 'wr': 0.01, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 50, 'optimizers': 'sgd'})
+(0.32633767, underfitting)
+
+########### patience=60, nb_epochs=[100,200,300]
+1. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.5, 'batch_size': 32, 'choice': {'layers': 'three'}, 'conv3': 32, 'conv2': 64, 'conv1': 32, 'wr': 0.0001, 'drop_l1': 0.25, 'drop_l3': 0.5, 'activations': 'relu', 'nb_epochs': 100, 'optimizers': 'sgd'})
+(nan, earlystopping)
+
+2. ('Params testing: ', {'loss': 'binary_crossentropy', 'drop_l2': 0.25, 'batch_size': 32, 'choice': {'layers': 'two'}, 'conv3': 64, 'conv2': 64, 'conv1': 32, 'wr': 0.001, 'drop_l1': 0.25, 'drop_l3': 0.5, 'activations': 'relu', 'nb_epochs': 200, 'optimizers': 'sgd'})
+(5.8127365, earlystopping=119)
+
+3. ('Params testing: ', {'loss': 'categorical_crossentropy', 'drop_l2': 0.25, 'batch_size': 32, 'choice': {'layers': 'two'}, 'conv3': 32, 'conv2': 64, 'conv1': 32, 'wr': 1e-05, 'drop_l1': 0.5, 'drop_l3': 0.25, 'activations': 'relu', 'nb_epochs': 100, 'optimizers': 'sgd'})
+
+############  patience=30, nb_epochs=[100,200,300]
+1. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 32, 'choice': {'layers': 'six'}, 'conv3': 32, 'conv2': 16, 'conv1': 16, 'conv4': 32, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 100, 'optimizers': 'nadam', 'lambda': 0.001})
+(1.1440204, slightly underfitting, earlystopping=47, ***)
+
+2. ('Params testing: ', {'hidden2': 64, 'hidden1': 64, 'drop_l2': 0.75, 'loss': 'categorical_crossentropy', 'batch_size': 32, 'choice': {'hidden3': 128, 'drop_l5': 0.5}, 'conv3': 64, 'conv2': 32, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 200, 'optimizers': 'nadam', 'lambda': 1e-05})
+
+3. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.75, 'loss': 'binary_crossentropy', 'batch_size': 16, 'choice': {'layers': 'six'}, 'conv3': 32, 'conv2': 16, 'conv1': 32, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'sgd', 'lambda': 0.1})
+(0.44022465, earlystopping=42)
+
+4. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'three'}, 'conv3': 64, 'conv2': 32, 'conv1': 32, 'conv4': 32, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 300, 'optimizers': 'sgd', 'lambda': 0.0001})
+(1.2453699, underfitting, earlystopping=59)
+
+5. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'three'}, 'conv3': 32, 'conv2': 16, 'conv1': 32, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 300, 'optimizers': 'nadam', 'lambda': 0.0001})
+(0.9969402, slightly underfitting, earlystopping=48, ***)
+
+6. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.75, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'two'}, 'conv3': 64, 'conv2': 32, 'conv1': 32, 'conv4': 64, 'drop_l1': 0.25, 'activations': 'relu', 'nb_epochs': 200, 'optimizers': 'adam', 'lambda': 0.1})
+(2.2647877, heavy underfitting, earlystopping=66)
+
+7. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.5, 'loss': 'binary_crossentropy', 'batch_size': 16, 'choice': {'layers': 'six'}, 'conv3': 64, 'conv2': 32, 'conv1': 16, 'conv4': 32, 'drop_l1': 0.25, 'activations': 'relu', 'nb_epochs': 300, 'optimizers': 'adam', 'lambda': 0.01})
+(0.4291032, earlystopping=36, add more epochs)
+
+8. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'six'}, 'conv3': 32, 'conv2': 32, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 100, 'optimizers': 'adam', 'lambda': 0.01})
+(1.4245239, add more epochs)
+
+9. ('Params testing: ', {'hidden2': 64, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'binary_crossentropy', 'batch_size': 16, 'choice': {'layers': 'two'}, 'conv3': 64, 'conv2': 32, 'conv1': 32, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 200, 'optimizers': 'nadam', 'lambda': 0.1})
+(0.43062198, earlystopping=52, add more epochs)
+
+10. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 32, 'choice': {'layers': 'five'}, 'conv3': 32, 'conv2': 16, 'conv1': 32, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 300, 'optimizers': 'adam', 'lambda': 0.0001})
+(1.1784705, slightly underfitting, earlystopping=42)
+
+11. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'six'}, 'conv3': 32, 'conv2': 16, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 100, 'optimizers': 'sgd', 'lambda': 0.01})
+(0.84501332, slightly underfitting)
+
+12. ('Params testing: ', {'hidden2': 64, 'hidden1': 64, 'drop_l2': 0.75, 'loss': 'binary_crossentropy', 'batch_size': 32, 'choice': {'layers': 'three'}, 'conv3': 32, 'conv2': 32, 'conv1': 32, 'conv4': 64, 'drop_l1': 0.25, 'activations': 'relu', 'nb_epochs': 300, 'optimizers': 'sgd', 'lambda': 0.001})
+(0.35979059, earlystopping=139, ****)
+
+############## patience=100, nb_epochs=[300,400,500]
+
+1. ('Params testing: ', {'hidden2': 64, 'hidden1': 128, 'drop_l2': 0.75, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'two'}, 'conv3': 64, 'conv2': 16, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 300, 'optimizers': 'adam', 'lambda': 1e-06})
+(1.2193923, earlystopping=139)
+
+2. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'two'}, 'conv3': 64, 'conv2': 32, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 300, 'optimizers': 'adam', 'lambda': 1e-06})
+(1.2562013, underfitting, earlystopping=110)
+
+3. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.5, 'loss': 'binary_crossentropy', 'batch_size': 16, 'choice': {'layers': 'three'}, 'conv3': 64, 'conv2': 16, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 300, 'optimizers': 'sgd', 'lambda': 0.0001})
+(0.21953353, earlystopping=249)
+ 
+4. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.75, 'loss': 'binary_crossentropy', 'batch_size': 16, 'choice': {'layers': 'two'}, 'conv3': 32, 'conv2': 16, 'conv1': 32, 'conv4': 32, 'drop_l1': 0.25, 'activations': 'hard_sigmoid', 'nb_epochs': 300, 'optimizers': 'adam', 'lambda': 1e-05})
+(0.33186236, underfitting, earlystopping=161)
+
+5. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.75, 'loss': 'categorical_crossentropy', 'batch_size': 32, 'choice': {'layers': 'four'}, 'conv3': 64, 'conv2': 16, 'conv1': 32, 'conv4': 32, 'drop_l1': 0.5, 'activations': 'hard_sigmoid', 'nb_epochs': 300, 'optimizers': 'nadam', 'lambda': 1e-05})
+(1.2662582, underfitting, earlystopping=117)
+
+6. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.75, 'loss': 'binary_crossentropy', 'batch_size': 16, 'choice': {'layers': 'two'}, 'conv3': 32, 'conv2': 32, 'conv1': 32, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 500, 'optimizers': 'adam', 'lambda': 0.0001})
+(0.25308645, earlystopping=226)
+
+7. ('Params testing: ', {'hidden2': 64, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'binary_crossentropy', 'batch_size': 16, 'choice': {'layers': 'two'}, 'conv3': 32, 'conv2': 16, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.25, 'activations': 'relu', 'nb_epochs': 300, 'optimizers': 'sgd', 'lambda': 0.0001})
+(0.175758, underfitting, earlystopping=255)
+
+8. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'five'}, 'conv3': 32, 'conv2': 32, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'relu', 'nb_epochs': 400, 'optimizers': 'nadam', 'lambda': 1e-06})
+(1.3656064, underfitting, earlystopping=117)
+
+9. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.75, 'loss': 'categorical_crossentropy', 'batch_size': 16, 'choice': {'layers': 'six'}, 'conv3': 32, 'conv2': 32, 'conv1': 32, 'conv4': 32, 'drop_l1': 0.5, 'activations': 'hard_sigmoid', 'nb_epochs': 300, 'optimizers': 'sgd', 'lambda': 0.0001})
+(0.9756611, underfitting, earlystopping=206)
+
+10. ('Params testing: ', {'hidden2': 64, 'hidden1': 64, 'drop_l2': 0.75, 'loss': 'categorical_crossentropy', 'batch_size': 32, 'choice': {'layers': 'six'}, 'conv3': 32, 'conv2': 32, 'conv1': 32, 'conv4': 32, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 500, 'optimizers': 'nadam', 'lambda': 1e-05})
+(1.2873052, earlystopping=206)
+
+11. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'binary_crossentropy', 'batch_size': 32, 'choice': {'layers': 'four'}, 'conv3': 32, 'conv2': 32, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'hard_sigmoid', 'nb_epochs': 300, 'optimizers': 'adagrad', 'lambda': 1e-05})
+
+12. ('Params testing: ', {'hidden2': 64, 'hidden1': 128, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 32, 'choice': {'layers': 'five'}, 'conv3': 32, 'conv2': 16, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 500, 'optimizers': 'adam', 'lambda': 1e-06})
+(0.98342204, earlystopping=142, try with relu)
+
+13. ('Params testing: ', {'hidden2': 64, 'hidden1': 64, 'drop_l2': 0.75, 'loss': 'binary_crossentropy', 'batch_size': 32, 'choice': {'layers': 'six'}, 'conv3': 64, 'conv2': 32, 'conv1': 16, 'conv4': 32, 'drop_l1': 0.5, 'activations': 'hard_sigmoid', 'nb_epochs': 500, 'optimizers': 'sgd', 'lambda': 0.0001})
+(0.31287056, earlystopping=400)
+
+14. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.5, 'loss': 'categorical_crossentropy', 'batch_size': 32, 'choice': {'layers': 'three'}, 'conv3': 32, 'conv2': 32, 'conv1': 16, 'conv4': 64, 'drop_l1': 0.5, 'activations': 'sigmoid', 'nb_epochs': 400, 'optimizers': 'adagrad', 'lambda': 1e-05})
+(1.2412382, underfitting, earlystopping=137)
+
+15. ('Params testing: ', {'hidden2': 128, 'hidden1': 64, 'drop_l2': 0.75, 'loss': 'binary_crossentropy', 'batch_size': 32, 'choice': {'layers': 'six'}, 'conv3': 32, 'conv2': 32, 'conv1': 16, 'conv4': 32, 'drop_l1': 0.25, 'activations': 'sigmoid', 'nb_epochs': 500, 'optimizers': 'adagrad', 'lambda': 0.0001})
+(0.27736926, underfitting, earlystopping=116)
+
+############### patience=150, nb_epochs=[300,400,500], 2 more hidden layers & 2 filter layers
+
+1. ('Params testing: ', {'hidden3': 128, 'hidden2': 128, 'hidden1': 256, 'batch_size': 16, 'choice': {'layers': 'six'}, 'activations': 'sigmoid', 'activity_lambda': 1e-06, 'nb_epochs': 400, 'optimizers': 'adam', 'loss': 'categorical_crossentropy', 'conv3': 64, 'conv2': 64, 'conv1': 32, 'conv6': 256, 'conv5': 128, 'conv4': 64, 'drop_l1': 0.5, 'drop_l3': 0.5, 'drop_l2': 0.5, 'lambda': 1e-07})
+
+2. ('Params testing: ', {'hidden3': 256, 'hidden2': 256, 'hidden1': 256, 'batch_size': 16, 'choice': {'drop_l6': 0.9, 'hidden4': 128}, 'drop_l1': 0.5, 'activity_lambda': 1e-07, 'nb_epochs': 400, 'optimizers': 'nadam', 'loss': 'categorical_crossentropy', 'conv3': 128, 'conv2': 64, 'conv1': 64, 'conv6': 128, 'conv5': 128, 'conv4': 128, 'activations': 'relu', 'drop_l3': 0.5, 'drop_l2': 0.5, 'drop_l5': 0.75, 'drop_l4': 0.5, 'lambda': 1e-07})
+(add more epochs & patience)
+
+3. ('Params testing: ', {'hidden3': 256, 'hidden2': 256, 'hidden1': 128, 'batch_size': 16, 'choice': {'layers': 'six'}, 'drop_l1': 0.25, 'activity_lambda': 1e-07, 'nb_epochs': 300, 'optimizers': 'adam', 'loss': 'categorical_crossentropy', 'conv3': 64, 'conv2': 64, 'conv1': 64, 'conv6': 256, 'conv5': 256, 'conv4': 128, 'activations': 'hard_sigmoid', 'drop_l3': 0.25, 'drop_l2': 0.75, 'drop_l5': 0.5, 'drop_l4': 0.5, 'lambda': 1e-07})
+(0.53809893, add more layers & epochs, ***)
+
+4. ('Params testing: ', {'hidden3': 128, 'hidden2': 256, 'hidden1': 256, 'batch_size': 32, 'choice': {'layers': 'four'}, 'drop_l1': 0.5, 'activity_lambda': 1e-06, 'nb_epochs': 500, 'optimizers': 'adamax', 'loss': 'categorical_crossentropy', 'conv3': 64, 'conv2': 32, 'conv1': 32, 'conv6': 256, 'conv5': 256, 'conv4': 64, 'activations': 'tanh', 'drop_l3': 0.25, 'drop_l2': 0.5, 'drop_l5': 0.5, 'drop_l4': 0.25, 'lambda': 1e-07})
+(0.74966222, underfitting, earlystopping=409)
+
+5. ('Params testing: ', {'hidden3': 128, 'hidden2': 128, 'hidden1': 256, 'batch_size': 32, 'choice': {'layers': 'two'}, 'drop_l1': 0.5, 'activity_lambda': 1e-05, 'nb_epochs': 500, 'optimizers': 'nadam', 'loss': 'categorical_crossentropy', 'conv3': 64, 'conv2': 64, 'conv1': 32, 'conv6': 256, 'conv5': 256, 'conv4': 128, 'activations': 'softplus', 'drop_l3': 0.5, 'drop_l2': 0.75, 'drop_l5': 0.75, 'drop_l4': 0.25, 'lambda': 1e-06})
+(1.27736926, heavily underfitting, earlystopping=116)
+
+6. ('Params testing: ', {'hidden3': 128, 'hidden2': 128, 'hidden1': 256, 'batch_size': 16, 'choice': {'layers': 'three'}, 'drop_l1': 0.5, 'activity_lambda': 1e-06, 'nb_epochs': 300, 'optimizers': 'adagrad', 'loss': 'categorical_crossentropy', 'conv3': 128, 'conv2': 256, 'conv1': 128, 'conv6': 512, 'conv5': 256, 'conv4': 256, 'activations': 'relu', 'drop_l3': 0.5, 'drop_l2': 0.5, 'drop_l5': 0.75, 'drop_l4': 0.5, 'lambda': 1e-06})
+(needs better lr & epochs, ****)
+  
+7. ('Params testing: ', {'hidden3': 256, 'hidden2': 128, 'hidden1': 256, 'batch_size': 32, 'choice': {'layers': 'three'}, 'drop_l1': 0.5, 'activity_lambda': 1e-05, 'nb_epochs': 500, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'conv3': 128, 'conv2': 256, 'conv1': 128, 'conv6': 512, 'conv5': 512, 'conv4': 512, 'activations': 'sigmoid', 'drop_l3': 0.5, 'drop_l2': 0.75, 'drop_l5': 0.75, 'drop_l4': 0.5, 'lambda': 1e-07})
+(heavy layers, use relu instead)
+
+8. ('Params testing: ', {'hidden3': 128, 'hidden2': 128, 'hidden1': 256, 'batch_size': 32, 'choice': {'drop_l6': 0.75, 'hidden4': 256}, 'drop_l1': 0.25, 'activity_lambda': 1e-05, 'nb_epochs': 400, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 128, 'conv1': 128, 'conv6': 256, 'conv5': 256, 'conv4': 256, 'activations': 'tanh', 'drop_l3': 0.5, 'drop_l2': 0.5, 'drop_l5': 0.5, 'drop_l4': 0.25, 'lambda': 1e-06})
+(underfitting, slow to learning, use relu instead & less lambda, ****)
+
+9. ('Params testing: ', {'hidden3': 256, 'hidden2': 128, 'hidden1': 256, 'batch_size': 16, 'choice': {'layers': 'five'}, 'drop_l1': 0.5, 'activity_lambda': 1e-07, 'nb_epochs': 500, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 256, 'conv1': 256, 'conv6': 256, 'conv5': 256, 'conv4': 256, 'activations': 'sigmoid', 'drop_l3': 0.25, 'drop_l2': 0.75, 'drop_l5': 0.75, 'drop_l4': 0.25, 'lambda': 1e-06})
+(underfitting, slow to learning, use relu instead & less lambda, ****)
+
+10. ('Params testing: ', {'hidden3': 128, 'hidden2': 128, 'hidden1': 256, 'batch_size': 32, 'choice': {'layers': 'six'}, 'drop_l1': 0.25, 'activity_lambda': 1e-06, 'nb_epochs': 500, 'optimizers': 'adagrad', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 128, 'conv1': 256, 'conv6': 512, 'conv5': 256, 'conv4': 512, 'activations': 'relu', 'drop_l3': 0.25, 'drop_l2': 0.5, 'drop_l5': 0.5, 'drop_l4': 0.25, 'lambda': 1e-06})
+(underfitting, slow to learn)
+
+############### patience=50, nb_epochs=[300,400,500], better lr & lambda
+
+1. ('Params testing: ', {'hidden3': 128, 'hidden2': 256, 'hidden1': 256, 'batch_size': 16, 'choice': {'layers': 'two'}, 'drop_l1': 0.5, 'activity_lambda': 1e-08, 'nb_epochs': 400, 'optimizers': 'adam', 'loss': 'categorical_crossentropy', 'conv3': 128, 'conv2': 128, 'conv1': 128, 'conv6': 256, 'conv5': 512, 'conv4': 256, 'activations': 'hard_sigmoid', 'drop_l3': 0.5, 'drop_l2': 0.75, 'drop_l5': 0.5, 'drop_l4': 0.25, 'lambda': 1e-06})
+(slighty underfitting, slow to learn, ***)
+
+2. ('Params testing: ', {'hidden3': 128, 'hidden2': 256, 'hidden1': 256, 'batch_size': 32, 'choice': {'layers': 'five'}, 'drop_l1': 0.25, 'activity_lambda': 1e-06, 'nb_epochs': 300, 'optimizers': 'adagrad', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 256, 'conv1': 256, 'conv6': 256, 'conv5': 256, 'conv4': 256, 'activations': 'relu', 'drop_l3': 0.5, 'drop_l2': 0.75, 'drop_l5': 0.5, 'drop_l4': 0.5, 'lambda': 1e-08})
+(less slighty underfitting, slow to learn - reduce lr even slower , add more params & less lambda, ***)
+
+3. ('Params testing: ', {'hidden3': 128, 'hidden2': 128, 'hidden1': 256, 'batch_size': 32, 'choice': {'layers': 'two'}, 'drop_l1': 0.25, 'activity_lambda': 1e-06, 'nb_epochs': 300, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'conv3': 128, 'conv2': 256, 'conv1': 256, 'conv6': 512, 'conv5': 512, 'conv4': 256, 'activations': 'sigmoid', 'drop_l3': 0.5, 'drop_l2': 0.75, 'drop_l5': 0.5, 'drop_l4': 0.25, 'lambda': 1e-07})
+(0.7497564, slighty underfitting, earlystopping=140, ***)
+
+4. ('Params testing: ', {'hidden3': 256, 'hidden2': 128, 'hidden1': 128, 'batch_size': 32, 'choice': {'layers': 'six'}, 'drop_l1': 0.5, 'activity_lambda': 1e-08, 'nb_epochs': 300, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'conv3': 128, 'conv2': 256, 'conv1': 256, 'conv6': 256, 'conv5': 512, 'conv4': 256, 'activations': 'hard_sigmoid', 'drop_l3': 0.25, 'drop_l2': 0.5, 'drop_l5': 0.75, 'drop_l4': 0.5, 'lambda': 1e-07})
+(slighty underfitting, ***)
+
+5. ('Params testing: ', {'hidden3': 256, 'hidden2': 128, 'hidden1': 128, 'batch_size': 32, 'choice': {'layers': 'four'}, 'drop_l1': 0.25, 'activity_lambda': 1e-07, 'nb_epochs': 300, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'lambda': 1e-06, 'conv3': 256, 'conv2': 256, 'conv1': 256, 'conv6': 512, 'conv5': 512, 'conv4': 512, 'activations': 'sigmoid', 'drop_l3': 0.5, 'drop_l2': 0.75, 'drop_l5': 0.5, 'drop_l4': 0.25, 'drop_l6': 0.75})
+(0.97946393, less slighty underfitting, earlystopping=140, ***)
+
+6. ('Params testing: ', {'hidden2': 128, 'hidden1': 128, 'batch_size': 32, 'choice': {'layers': 'five'}, 'activations': 'relu', 'activity_lambda': 1e-07, 'nb_epochs': 500, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 256, 'conv1': 128, 'conv6': 256, 'conv5': 256, 'conv4': 512, 'drop_l1': 0.25, 'drop_l3': 0.75, 'drop_l2': 0.75, 'drop_l5': 0.9, 'drop_l4': 0.5, 'lambda': 1e-07})
+(slightly underfitting, ***)
+
+7. ('Params testing: ', {'hidden2': 128, 'hidden1': 256, 'batch_size': 16, 'choice': {'layers': 'five'}, 'activations': 'tanh', 'activity_lambda': 1e-09, 'nb_epochs': 300, 'optimizers': 'adam', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 128, 'conv1': 256, 'conv5': 512, 'conv4': 512, 'drop_l1': 0.5, 'drop_l3': 0.75, 'drop_l2': 0.5, 'drop_l5': 0.5, 'drop_l4': 0.75, 'lambda': 1e-08})
+(slighty underfitting, patience=10, ***)
+
+8. ('Params testing: ', {'hidden2': 256, 'hidden1': 256, 'batch_size': 16, 'choice': {'hidden3': 256, 'drop_l6': 0.9}, 'activations': 'tanh', 'activity_lambda': 1e-09, 'nb_epochs': 300, 'optimizers': 'sgd', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 128, 'conv1': 256, 'conv5': 512, 'conv4': 256, 'drop_l1': 0.25, 'drop_l3': 0.75, 'drop_l2': 0.25, 'drop_l5': 0.9, 'drop_l4': 0.9, 'lambda': 1e-08})
+(1.8679922, underfitting, earlystopping=114, **)
+
+9. ('Params testing: ', {'hidden2': 256, 'hidden1': 256, 'batch_size': 16, 'choice': {'layers': 'three'}, 'activations': 'tanh', 'activity_lambda': 1e-08, 'nb_epochs': 400, 'optimizers': 'nadam', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 128, 'conv1': 128, 'conv5': 512, 'conv4': 256, 'drop_l1': 0.75, 'drop_l3': 0.5, 'drop_l2': 0.5, 'drop_l5': 0.5, 'drop_l4': 0.5, 'lambda': 1e-09})
+(2.2342868, heavily underfitting, earlystopping=29, *)
+
+10. ('Params testing: ', {'hidden2': 256, 'hidden1': 128, 'batch_size': 32, 'choice': {'layers': 'four'}, 'activations': 'tanh', 'activity_lambda': 1e-07, 'nb_epochs': 500, 'optimizers': 'adagrad', 'loss': 'categorical_crossentropy', 'conv3': 256, 'conv2': 128, 'conv1': 256, 'conv5': 256, 'conv4': 256, 'drop_l1': 0.5, 'drop_l3': 0.75, 'drop_l2': 0.5, 'drop_l5': 0.5, 'drop_l4': 0.5, 'lambda': 1e-08})
+(slightly underfitting, patience=10, ****)
+
+#####################################################################
+
+
+
